@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puraniks Abitante | 2 BHK & 3 BHK Flats In Bavdhan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+
+<body class="font-brand scroll-smooth">
+  <!-- Navbar -->
+  <header class="w-full flex items-center justify-center bg-white py-4 sticky left-0 top-0 z-40">
+    <div class="w-11/12 lg:w-10/12 grid grid-cols-2 lg:flex items-center justify-between">
+      <div>
+        <img src="./static/logo (1).webp" class="h-16" alt="logo" />
+      </div>
+      <div class="flex items-center justify-end">
+        <button type="button"
+          class="flex items-center p-2 text-sm text-gray-300 lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+          onclick="handleToggleNavbarModel()">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <nav id="navbar-items"
+        class="text-black lg:flex flex-col lg:flex-row items-center justify-end space-x-5 text-md hidden">
+        <a onclick="handleToggleNavbar(true)" href="#Overview">Overview</a>
+        <a onclick="handleToggleNavbar(true)" href="#Project-Highlights">Project Highlights</a>
+        <a onclick="handleToggleNavbar(true)" href="#amenities">Amenities</a>
+        <a onclick="handleToggleNavbar(true)" href="#location-insights">Location Insights</a>
+        <a onclick="handleToggleNavbar(true)" href="#Pricing">Pricing</a>
+        <button onclick="handleToggleNavbar(true); handleToggleModel();"
+          class="bg-black text-white px-5 py-2 font-semibold animate-btn">
+          <i class="fa fa-download animate-bounce mr-2" aria-hidden="true"></i>
+          Download brochure
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner Image -->
+  <section>
+    <div class="owl-carousel banner">
+      <img src="./static/Banner.jpg" alt="home banner" class="w-full" />
+    </div>
+    <div class="owl-dots flex items-center justify-center py-2"></div>
+  </section>
+
+  <!-- Roswalt Realty Overview Section -->
+  <section id="Overview" class="bg-brand-gray text-black w-full py-10">
+    <div class="w-10/12 mx-auto flex flex-col items-center justify-center">
+      <h2 class="text-center text-2xl font-bold mb-2">Roswalt Realty Overview</h2>
+      <hr class="w-20 mb-10 bg-black border-none h-0.5" />
+
+      <p class="text-justify leading-7 text-white-600 mb-5">
+        Roswalt Zaiden is located in the heart of Mumbai, surrounded by cultural Mumbai life and stunning
+        infrastructures, at Passcode NEVER BEFORER experience is not just luxurious, but also opulent. From the Grandeur
+        of Project captures the best views of the city’s many cultural institutions, hubs and entertainment venues.
+        Roswalt Zaiden curated a collection of thoughtfully-planned 1 & 2 bed residences to elevate your living
+        experience. A never-before-seen addition to your luxurious living in Oshiwara.
+      </p>
+      <button onclick="handleToggleModel()" class="bg-black text-white px-4 py-2 font-semibold animate-btn">
+        Project Features
+      </button>
+    </div>
+  </section>
+
+  <!-- Project Highlights Section -->
+  <section id="Project-Highlights" class="bg-brand-dark text-white w-full py-10">
+    <div class="w-10/12 mx-auto flex flex-col items-center justify-center">
+      <h2 class="text-center text-2xl font-bold mb-2">Project Highlights</h2>
+      <hr class="w-20 mb-10 bg-white border-none h-0.5" />
+
+      <div class="w-full md:w-8/12 grid grid-cols-1 md:grid-cols-2 items-start gap-5 mb-5">
+        <ul class="list-disc flex flex-col space-y-4">
+          <li>45 Storey Tower with 30+ Amenities</li>
+          <li>Safe & Secure Locality</li>
+        </ul>
+
+        <ul class="list-disc flex flex-col space-y-4">
+          <li>Exclusive living on this futuristic destination</li>
+          <li>Vastu Compliant Layout & Ample Parking Facility</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Amenities Section -->
+  <section class="bg-brand-gray text-black w-full py-10" id="amenities">
+    <div class="w-10/12 mx-auto flex flex-col items-center justify-center">
+      <h2 class="text-center text-2xl font-bold mb-2">Amenities</h2>
+      <hr class="w-20 mb-10 bg-black border-none h-0.5" />
+
+      <div class="w-full md:w-11/12 grid grid-cols-1 md:grid-cols-4 items-start gap-5 md:gap-36 mb-5">
+        <ul class="list-disc flex flex-col gap-5 h-full justify-evenly">
+          <li>Senior Citizen Sitout</li>
+          <li>Multipurpose Hall</li>
+          <li>Children Play Area</li>
+          <li>Acupressure Pathway</li>
+          <li>Indoor Games</li>
+          <li>Swimming Pool</li>
+          <li>Hopscotch Area</li>
+        </ul>
+
+
+        <div class="owl-carousel banner col-span-2">
+          <img src="./static/amenities-roswalt-1.jpeg" alt="amenities" class="w-full" />
+          <img src="./static/amenities-roswalt-2.jpeg" alt="amenities" class="w-full" />
+          <img src="./static/amenities-roswalt-3.jpeg" alt="amenities" class="w-full" />
+        </div>
+
+        <ul class="list-disc flex flex-col gap-5 h-full justify-evenly">
+          <li>Jogging Track</li>
+          <li>Pool Table</li>
+          <li>Cycling</li>
+          <li>Amphitheatre</li>
+          <li>Badminton</li>
+          <li>Gymnasium</li>
+          <li>Barbeque Pit</li>
+          <li>Club House</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Address Section -->
+  <section id="location-insights" class="bg-brand-dark text-white w-full py-10">
+    <div class="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-10">
+      <div class="flex flex-col items-center justify-center h-full text-center">
+        <h2 class="text-center text-2xl font-bold mb-2">
+          Location Insights
+        </h2>
+        <hr class="w-20 mb-10 bg-white border-none h-0.5" />
+
+        <ul class="list-disc text-left flex flex-col space-y-10 mt-4">
+          <li>3 metro lines in close proximity</li>
+          <li>1 Km away from Western Express Highway</li>
+          <li>1 Km away from Ram Mandir Railway Station</li>
+          <li>1 Km away from Jogeshwari Railway Station</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="mapouter-location">
+          <div class="gmap_canvas-location"><iframe class="gmap_iframe-location" width="100%" frameborder="0" scrolling="no"
+              marginheight="0" marginwidth="0"
+              src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=Roswalt Zaiden, M/s. A.S. Hightech, Singh Compound, Next to Ruby Hospital Near Ajit Glass, Swami Vivekananda Rd, Jogeshwari West, Mumbai, Maharashtra 400102&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+              href="https://pdflist.com/" alt="pdf download">Pdf download</a></div>
+          <style>
+            .mapouter-location {
+              position: relative;
+              text-align: right;
+              width: 100%;
+              height: 400px;
+            }
+
+            .gmap_canvas-location {
+              overflow: hidden;
+              background: none !important;
+              width: 100%;
+              height: 400px;
+            }
+
+            .gmap_iframe-location {
+              height: 400px !important;
+            }
+          </style>
+        </div>
+       
+    </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="Pricing" class="bg-brand-gray text-black w-full py-10">
+    <div class="w-11/12 md:w-8/12 mx-auto flex flex-col items-center justify-center">
+      <h2 class="text-center text-2xl font-bold mb-2">Pricing</h2>
+      <hr class="w-20 mb-10 bg-black border-none h-0.5" />
+
+      <div class="w-full md:w-8/12 mx-auto flex flex-col divide-y-2 divide-black">
+        <div class="w-full grid grid-cols-3 font-bold text-lg md:text-xl divide-x-2 divide-black">
+          <span class="text-center pb-2">Configuration</span>
+          <span class="text-center pb-2">Carpet Area</span>
+          <span class="text-center pb-2">Price</span>
+        </div>
+        <div class="w-full grid grid-cols-3 text-md divide-x-2 divide-black">
+          <span class="text-center px-4 py-4">1 BHK</span>
+          <span class="text-center px-4 py-4">440 Sq. ft.</span>
+          <div class="flex items-center justify-center">
+            <button onclick="handleToggleModel()" class="bg-brand-dark text-white px-5 py-2 font-semibold animate-btn">
+              Price Breakup
+            </button>
+          </div>
+        </div>
+        <div class="w-full grid grid-cols-3 text-md divide-x-2 divide-black">
+          <span class="text-center px-4 py-4">2 BHK Aros</span>
+          <span class="text-center px-4 py-4">655-715 Sq.ft.</span>
+          <div class="flex items-center justify-center">
+            <button onclick="handleToggleModel()" class="bg-brand-dark text-white px-5 py-2 font-semibold animate-btn">
+              Price Breakup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------- Floor plan --------------  -->
+
+  <section class="bg-brand-gray text-black w-full py-10">
+    <div class="w-11/12 md:w-8/12 mx-auto flex flex-col items-center justify-center">
+      <h2 class="text-center text-2xl font-bold mb-2">Floor Plans</h2>
+      <hr class="w-20 mb-10 bg-black border-none h-0.5" />
+    </div>
+
+    <div class="owl-carousel floor-plan" id="Floor-Plan">
+      <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('/static/9.jpg');"
+        class="text-white  h-44 bg-center bg-no-repeat bg-contain w-full flex flex-col items-center justify-center gap-2">
+        <span style="font-size: large; font-weight: 400;">2 BHK</span> <br>
+        <button onclick="handleToggleModel()" class="bg-brand-dark text-white px-5 py-2 font-semibold animate-btn">
+          Price Breakup
+        </button>
+      </div>
+      <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('/static/10.jpg');"
+        class="text-white  h-44 bg-center bg-no-repeat bg-contain w-full flex flex-col items-center justify-center gap-2">
+        <span style="font-size: large; font-weight: 400;">3 BHK</span> <br>
+        <button onclick="handleToggleModel()" class="bg-brand-dark text-white px-5 py-2 font-semibold animate-btn">
+          Price Breakup
+        </button>
+      </div>
+    </div>
+    <div class="owl-dots flex items-center justify-center py-2"></div>
+  </section>
+
+
+
+  <!-- --- Footer -- -->
+  <footer class="w-full bg-brand-dark text-white font-sans">
+    <div class="w-11/12 md:w-10/12  mx-auto flex flex-col md:flex-row md:gap-20 gap-10 py-10">
+      <div class="w-full md:w-5/12">
+        <h5 class="mb-5 text-center font-bold text-lg">
+          A STEP AHEAD. ASK TO OWN.
+        </h5>
+        <form action="form-action.php" method="get"
+          class="flex flex-col space-y-5 mb-5 bg-gray-200 text-black p-5 md:p-10 rounded-xl">
+          <input placeholder="First Name" type="text" name="first_name" required
+            class="py-2 px-2 placeholder:text-black/50 placeholder:font-semibold font-semibold text-black" />
+          <input placeholder="Phone" type="text" name="phone" required
+            class="py-2 px-2 placeholder:text-black/50 placeholder:font-semibold font-semibold text-black" />
+          <input placeholder="Email" type="email" name="email" required
+            class="py-2 px-2 placeholder:text-black/50 placeholder:font-semibold font-semibold text-black" />
+          <select placeholder="Configuration" name="configuration" required
+            class="py-2 px-2 placeholder:text-black/50 placeholder:font-semibold font-semibold text-black/50">
+            <option value="">Configuration Looking For</option>
+            <option value="2bhk">2 BHK</option>
+            <option value="3bhk">3 BHK</option>
+          </select>
+
+          <select placeholder="Site Visit Availablity" name="site_visit_availablity" required
+            class="py-2 px-2 placeholder:text-black/50 placeholder:font-semibold font-semibold text-black/50">
+            <option value="">Site Visit Availablity?</option>
+            <option value="2bhk">Weekends</option>
+            <option value="3bhk">Weekdays</option>
+          </select>
+
+          <div>
+            <input type="checkbox" name="agree_to_contact" required id="agree_to_contact" />
+            <label for="agree_to_contact">I agreed to be contacted on Whatsapp</label>
+          </div>
+
+          <button type="submit" onclick="reDirectToThankyou()"
+            class="bg-brand-dark text-white px-5 py-2 font-semibold animate-btn">
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <div
+        class="flex flex-col gap-5 text-center justify-start md:text-left w-full md:w-6/12 text-sm leading-7 md:pt-12">
+        <div class="h-20 flex text-center justify-center items-center md:justify-start w-full">
+          <div class="h-20 flex text-center justify-center items-center md:justify-start w-full ">
+            <img src="./static/logo (1).webp" class="h-20 bg-white p-2" alt="logo" />
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-5 md:gap-10">
+          <div class="w-full md:w-7/12">
+            <p class="mb-5">
+              Roswalt Realty believes in creating spaces that are an extension of one’s self and this philosophy is
+              infused in every project undertaken by us.
+              <!-- The company boasts of a proud lineage and finds its roots in
+              the prestigious red brick group known for providing world-class solutions in construction. The tradition
+              continues after 3 decades. The expert team is propelled by the trailblazing attitude of Mr. Shantanoo rane
+              who is a distinguished member of the council of architecture, mumbai, and is an associate member of the
+              indian institute of architects. Privacy Policy -->
+            </p>
+            <p class="font-bold">CONTACT US</p>
+            <p class="mb-5">
+              Roswalt Zaiden, M/s. A.S. Hightech, Singh Compound,
+              Next to Ruby Hospital, Near Ajit Glass,
+              Swami Vivekananda Rd, Jogeshwari West, Mumbai, 400102 </p>
+            <p class="font-bold">REACH US</p>
+            <div class="flex flex-col gap-2">
+              <a href="https://wa.me/+919960078886" target="blank" class="flex gap-3 items-center justify-start"><i
+                  class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+              <button class="flex gap-3 items-center justify-start" onclick="handleToggleModel()"><i
+                  class="fa-regular fa-envelope"></i><span>Enquire Now</span></button>
+              <a class="flex gap-3 items-center justify-start" href="tel:+919960078886"><i
+                  class="fa fa-phone"></i><span>Call Us</span></a>
+            </div>
+          </div>
+          <div class="w-full md:w-4/12">
+            <p class="font-bold mb-3">QUICK LINKS</p>
+            <ul class="flex flex-col space-y-2">
+              <li class="before:content-['>'] before:pr-1">
+                2 Bhk Flats
+              </li>
+              <li class="before:content-['>'] before:pr-1">
+                Projects in Bavdhan
+              </li>
+              <li class="before:content-['>'] before:pr-1.5">
+                3 Bhk Flats
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full bg-brand-gray flex items-center justify-center text-center text-black py-1">
+      <small>
+        Copyright @2022. All Rights Reserved. Designed by Pinaka Digital
+        Technologies
+      </small>
+    </div>
+  </footer>
+
+
+  <!-- ----- button-fixed----  -->
+  <div class="h-20 items-stretch flex flex-row sticky bottom-0 left-0 right-0 bg-brand-dark text-lg"
+    style="z-index: 1000;">
+    <button
+      class="w-full flex items-center gap-3 justify-center text-center flex-col p-4 text-sm bg-brand-darker text-gray-300  focus:outline-none focus:ring-2 focus:ring-gray-200"
+      onclick="handleToggleModel()">
+      <i class="fa fa-2x fa-th-large"></i>
+      <span>Enquire Now</span>
+    </button>
+    <div class="h-full w-3 bg-white"></div>
+    <button
+      class="w-full flex items-center gap-3 justify-center text-center flex-col p-4 text-sm bg-brand-darker text-gray-300  focus:outline-none focus:ring-2 focus:ring-gray-200"
+      onclick="handleToggleModel()">
+      <i class="fa-brands fa-2x fa-whatsapp"></i>
+      <span>Whatsapp</span>
+    </button>
+    <div class="h-full w-3 bg-white"></div>
+    <a href="tel:+91-83296 32692"
+      class="gap-3 w-full flex items-center justify-center text-center flex-col p-4 text-sm bg-brand-darker text-gray-300  focus:outline-none focus:ring-2 focus:ring-gray-200">
+      <i class="fa-2x fa-solid fa-phone"></i>
+      <span>Call Now</span>
+    </a>
+  </div>
+
+  <!-- ----- button-fixed----  -->
+  <!-- <div class="h-20 items-stretch flex flex-row sticky bottom-0 left-0 right-0 bg-brand-dark text-lg md:hidden" style="z-index: 1000;">
+    <button
+      class="w-full flex items-center gap-3 justify-center text-center flex-col p-4 text-sm bg-brand-dark text-gray-300 lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+      onclick="handleToggleModel()">
+      <i class="fa fa-th-large"></i>
+      <span>Enquire Now</span>
+    </button>
+    <div class="h-full w-3 bg-white"></div>
+    <a href="tel:+91-79068 31859"
+      class="gap-3 w-full flex items-center justify-center text-center flex-col p-4 text-sm bg-brand-dark text-gray-300 lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200">
+      <i class="fa-solid fa-phone"></i>
+      <span>Call Now</span>
+    </a>
+  </div> -->
+  <!-- Floating Button -->
+  <button onclick="handleToggleModel()"
+    class="fixed -right-20 bottom-32 rotate-90 bg-brand-dark py-2 px-3 hidden md:block text-white animate-btn z-40">
+    Schedule a Site Visit
+  </button>
+
+  <!-- Model -->
+  <div id="model" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center font-sans hidden">
+    <div
+      class="[max-height:calc(100vh)] h-full w-full md:h-auto md:w-auto bg-white p-10 relative grid grid-cols-1 md:grid-cols-2 gap-10 overflow-y-auto">
+      <button onclick="handleToggleModel(true)"
+        class="absolute flex items-center justify-center w-10 h-10 top-2 right-2 bg-white rounded-full p-3 shadow-lg">
+        x
+      </button>
+      <div>
+        <h4 class="font-bold text-xl text-center mb-3">Get In Touch</h4>
+        <form action="form-action.php" method="post" class="flex flex-col space-y-5 text-black">
+          <input placeholder="First Name" type="text" name="first_name" required
+            class="py-2 px-2 placeholder:text-black/50 border rounded-lg placeholder:font-semibold font-semibold text-black" />
+          <input placeholder="Phone" type="text" name="phone" required
+            class="py-2 px-2 placeholder:text-black/50 border rounded-lg placeholder:font-semibold font-semibold text-black" />
+          <input placeholder="Email" type="email" name="email" required
+            class="py-2 px-2 placeholder:text-black/50 border rounded-lg placeholder:font-semibold font-semibold text-black" />
+          <select placeholder="Configuration" name="configuration" required
+            class="py-2 px-2 placeholder:text-black/50 border rounded-lg placeholder:font-semibold font-semibold text-black/50">
+            <option value="">Select Project</option>
+            <option value="2bhk">2 BHK</option>
+            <option value="3bhk">3 BHK</option>
+          </select>
+
+          <select placeholder="Site Visit Availablity" name="site_visit_availablity" required
+            class="py-2 px-2 placeholder:text-black/50 border rounded-lg placeholder:font-semibold font-semibold text-black/50">
+            <option value="">Site Visit Availablity?</option>
+            <option value="2bhk">Weekends</option>
+            <option value="3bhk">Weekdays</option>
+          </select>
+
+          <div>
+            <input type="checkbox" name="agree_to_contact" required id="agree_to_contact" />
+            <label for="agree_to_contact">I agreed to be contacted on Whatsapp</label>
+          </div>
+          <button type="submit" class="bg-black text-white px-5 py-2 font-semibold animate-btn">
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-xl text-left mb-3">Address</h4>
+        <img src="./static/logo (1).webp" alt="Location Map" class="h-20 object-contain" />
+        <p class="font-bold">Roswaly Realty</p>
+        <p class="mb-5">Next to Ruby Hospital, Near Ajit Glass,<br> Swami Vivekananda Rd, Jogeshwari West, <br> Mumbai,
+          400102</p>
+        <div class="mapouter">
+          <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+              marginheight="0" marginwidth="0"
+              src="https://maps.google.com/maps?width=400&amp;height=200&amp;hl=en&amp;q=Roswalt Zaiden, M/s. A.S. Hightech, Singh Compound, Next to Ruby Hospital Near Ajit Glass, Swami Vivekananda Rd, Jogeshwari West, Mumbai, Maharashtra 400102&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+              href="https://pdflist.com/" alt="pdf download">Pdf download</a></div>
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              width: 100%;
+              height: 200px;
+            }
+
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              width: 100%;
+              height: 200px;
+            }
+
+            .gmap_iframe {
+              height: 200px !important;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------ Navbar Model ----- -->
+  <div id="navbar-model" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center font-sans hidden">
+    <div class="[max-height:calc(100vh)] w-full h-full bg-white p-10 relative grid grid-cols-1 gap-10 overflow-y-auto">
+      <button onclick="handleToggleNavbarModel(true)"
+        class="absolute flex items-center justify-center w-10 h-10 top-2 right-2 bg-white rounded-full p-3 shadow-lg">
+        x
+      </button>
+      <div class="flex gap-5 justify-center">
+        <img src="/static/Puranics Abitante.jpg" alt="">
+      </div>
+      <ul class="mb-40 text-center flex flex-col space-y-10 text-xl">
+        <li><a href="#Overview">Overview</a></li>
+        <li><a href="#Project-Highlights">Project Highlights</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#Pricing">Pricing</a></li>
+        <li><a href="#location-insights">Location Insights</a></li>
+        <li><a href="#tel : +917906831859"><i class="fa-solid fa-phone mr-4"></i>+91-79068 31859</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            brand: "'Poppins', sans-serif",
+          },
+          colors: {
+            brand: {
+              gray: "#F7F7F7",
+              dark: "#ceaf7b",
+              darker: "#4a3526",
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <script>
+    let isNavbarOpen = false;
+    function handleToggleNavbar(forceClose = false) {
+      if (forceClose) {
+        isNavbarOpen = true;
+      }
+      if (isNavbarOpen) {
+        $("#navbar-items").addClass("hidden space-x-5");
+        $("#navbar-items").removeClass(
+          "flex pt-5 px-5 !items-start !justify-start !space-y-3"
+        );
+
+        isNavbarOpen = false;
+      } else {
+        $("#navbar-items").removeClass("hidden space-x-5");
+        $("#navbar-items").addClass(
+          "flex pt-5 px-5 !items-start !justify-start !space-y-3"
+        );
+        isNavbarOpen = true;
+      }
+    }
+  </script>
+
+  <script>
+    let isModelOpen = false;
+    function handleToggleModel(forceClose = false) {
+      if (forceClose) {
+        isModelOpen = true;
+      }
+      if (isModelOpen) {
+        $("#model").addClass("hidden");
+
+        isModelOpen = false;
+      } else {
+        $("#model").removeClass("hidden");
+
+        isModelOpen = true;
+      }
+    }
+  </script>
+
+  <script>
+    let isNavbarModelOpen = false;
+    function handleToggleNavbarModel(forceClose = false) {
+      if (forceClose) {
+        isNavbarModelOpen = true;
+      }
+      if (isNavbarModelOpen) {
+        $("#navbar-model").addClass("hidden");
+
+        isNavbarModelOpen = false;
+      } else {
+        $("#navbar-model").removeClass("hidden");
+
+        isNavbarModelOpen = true;
+      }
+    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel.banner").owlCarousel({
+        loop: true,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        dots: false,
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel.floor-plan").owlCarousel({
+        loop: true,
+        items: 4,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        dots: false,
+        margin: 20,
+        autoHeight: true,
+        responsive: {
+          0: { items: 1 },
+          480: { items: 2 },
+          768: { items: 4 }
+        }
+      });
+    });
+  </script>
+
+  <script>
+    function reDirectToThankyou() {
+      window.open("thankyou.html", "_blank")
+    }
+  </script>
+</body>
+
+</html>

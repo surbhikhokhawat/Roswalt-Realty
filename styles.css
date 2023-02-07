@@ -1,0 +1,103 @@
+.owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #cfd2cf !important;
+  display: block;
+  -webkit-backface-visibility: visible;
+  -webkit-transition: opacity 200ms ease;
+  -moz-transition: opacity 200ms ease;
+  -ms-transition: opacity 200ms ease;
+  -o-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+.owl-dot.active span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #141b1f !important;
+  display: block;
+  -webkit-backface-visibility: visible;
+  -webkit-transition: opacity 200ms ease;
+  -moz-transition: opacity 200ms ease;
+  -ms-transition: opacity 200ms ease;
+  -o-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+.btn {
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+
+  /* //   @media(min-width: 400px) {
+  //     display: inline-block;
+  //     margin-right: 2.5em;
+
+  //     &:nth-of-type(even) {
+  //       margin-right: 0;
+  //     }
+  //   } */
+
+  @media (min-width: 600px) {
+    margin: 0 1em 2em;
+
+  }
+
+  /* &:hover {
+    text-decoration: none;
+  } */
+}
+
+.animate-btn {
+  position: relative;
+  overflow: hidden;
+  background-color: #ceaf7b !important;
+}
+.animate-btn::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.85);
+  height: 8rem;
+  width: 4rem;
+  left: 1rem;
+  transform: rotate(14deg);
+  position: absolute;
+  top: -1rem;
+  filter: blur(7px);
+  animation-name: btnanimation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes updown {
+  from {
+    top: -0.6rem;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes btnanimation {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
