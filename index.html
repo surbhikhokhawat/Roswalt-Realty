@@ -296,8 +296,8 @@
         <h5 class="mb-5 text-center font-bold text-lg">
           A STEP AHEAD. ASK TO OWN.
         </h5>
-        <form action="form-action.php" method="get"
-          class="flex flex-col space-y-5 mb-5 bg-gray-200 text-black p-5 md:p-10 rounded-xl">
+        <form action="form-action.php" method="POST" onsubmit="reDirectToThankyou()"
+       class="flex flex-col space-y-5 mb-5 bg-gray-200 text-black p-5 md:p-10 rounded-xl">
           <input placeholder="First Name" type="text" name="first_name" required
             class="py-2 px-2 placeholder:text-black/50 placeholder:font-semibold font-semibold text-black" />
           <input placeholder="Phone" type="text" name="phone" required
@@ -324,7 +324,7 @@
             <label for="agree_to_contact">I agreed to be contacted on Whatsapp</label>
           </div>
 
-          <button type="submit" onclick="reDirectToThankyou()"
+          <button type="submit"
             class="bg-brand-dark text-white px-5 py-2 font-semibold animate-btn">
             Submit
           </button>
@@ -444,7 +444,7 @@
       </button>
       <div>
         <h4 class="font-bold text-xl text-center mb-3">Get In Touch</h4>
-        <form action="form-action.php" method="post" class="flex flex-col space-y-5 text-black">
+        <form action="form-action.php" method="get" class="flex flex-col space-y-5 text-black">
           <input placeholder="First Name" type="text" name="first_name" required
             class="py-2 px-2 placeholder:text-black/50 border rounded-lg placeholder:font-semibold font-semibold text-black" />
           <input placeholder="Phone" type="text" name="phone" required
