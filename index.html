@@ -354,7 +354,7 @@
               Roswalt Zaiden, M/s. A.S. Hightech, Singh Compound,
               Next to Ruby Hospital, Near Ajit Glass,
               Swami Vivekananda Rd, Jogeshwari West, Mumbai, 400102 <br>
-              <a class="flex gap-3 items-center justify-start" href="tel:+917575996666"><i
+              <a class="flex gap-3 items-center justify-center md:justify-start" href="tel:+917575996666"><i
                 class="fa fa-phone"></i><span>Call Us : +91-7575996666</span></a> </p>
             <!-- <p class="font-bold">REACH US</p>
             <div class="flex flex-col gap-2">
@@ -382,8 +382,7 @@
     </div>
     <div class="w-full bg-brand-gray flex items-center justify-center text-center text-black py-1">
       <small>
-        Copyright @2023. All Rights Reserved. Designed by Pinaka Digital
-        Technologies
+        Copyright @2023. All Rights Reserved. Stellar Properties
       </small>
     </div>
   </footer>
@@ -430,8 +429,8 @@
   </div> -->
   <!-- Floating Button -->
   <button onclick="handleToggleModel()"
-    class="fixed -right-20 bottom-32 rotate-90 bg-brand-dark py-2 px-3 hidden md:block text-white animate-btn z-40"
-    style="z-index: 1000;">
+    class="fixed -right-20 bottom-32 rotate-90 py-2 px-3 hidden md:block text-white animate-btn-site z-40"
+    style="z-index: 1000; background-color: black;">
     Schedule a Site Visit
   </button>
 
@@ -523,12 +522,12 @@
         <img src="/static/Puranics Abitante.jpg" alt="">
       </div>
       <ul class="mb-40 text-center flex flex-col space-y-10 text-xl">
-        <li><a href="#Overview">Overview</a></li>
-        <li><a href="#Project-Highlights">Project Highlights</a></li>
-        <li><a href="#amenities">Amenities</a></li>
-        <li><a href="#Pricing">Pricing</a></li>
-        <li><a href="#location-insights">Location Insights</a></li>
-        <li><a href="#tel : +917575996666"><i class="fa-solid fa-phone mr-4"></i>+91-7575996666</a></li>
+        <li> <button onclick="handleToggleNavbarModel(true)"> <a href="#Overview">Overview</a></button></li>
+        <li> <button onclick="handleToggleNavbarModel(true)"> <a href="#Project-Highlights">Project Highlights</a></button></li>
+        <li> <button onclick="handleToggleNavbarModel(true)"> <a href="#amenities">Amenities</a></button></li>
+        <li> <button onclick="handleToggleNavbarModel(true)"> <a href="#Pricing">Pricing</a></button></li>
+        <li> <button onclick="handleToggleNavbarModel(true)"> <a href="#location-insights">Location Insights</a></button></li>
+        <li> <button onclick="handleToggleNavbarModel(true)"> <a href="#tel : +917575996666"><i class="fa-solid fa-phone mr-4"></i>+91-7575996666</a></button></li>
       </ul>
     </div>
   </div>
@@ -550,7 +549,7 @@
             brand: {
               gray: "#F7F7F7",
               dark: "#ceaf7b",
-              darker: "#4a3526",
+              darker: "#000000",
             },
           },
         },

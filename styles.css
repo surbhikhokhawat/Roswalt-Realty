@@ -69,6 +69,26 @@
   overflow: hidden;
   background-color: #ceaf7b !important;
 }
+
+.animate-btn-site {
+  position: relative;
+  overflow: hidden;
+  background-color: black !important;
+}
+.animate-btn-site::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.85);
+  height: 8rem;
+  width: 4rem;
+  left: 1rem;
+  transform: rotate(14deg);
+  position: absolute;
+  top: -1rem;
+  filter: blur(7px);
+  animation-name: btnanimation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
 .animate-btn::before {
   content: "";
   background: rgba(255, 255, 255, 0.85);
